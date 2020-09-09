@@ -40,17 +40,17 @@ it can be used to plot simple, static maps); rather, it's a powerful library use
 with geospatial data in Python.
 
 Each of the 3 tutorials begin with the exact same steps:
-using GeoPandas to read in a *shapefile* and convert it to a so-called [GeoDataFrame](https://geopandas.org/reference/geopandas.GeoDataFrame.html) (the library is built on top of Pandas)
+using GeoPandas to read in a *shapefile* and convert it to a so-called "[GeoDataFrame](https://geopandas.org/reference/geopandas.GeoDataFrame.html)" (the library is built on top of Pandas)
 so that we can perform all the convenient data wrangling operations we're already used to, such
 as filtering, grouping, and merging.
 
 The fundamental difference between a regular Pandas
-*DataFrame* and a speciazlied *GeoDataFrame*, however, is that the the latter understands
+*DataFrame* and a specialized *GeoDataFrame*, however, is that the the latter understands
 geometric data types such as Points, Lines, and Polygons, and can easily perform geometric /
 spatial operations on them.
 
 And what's really nice for us, is once the GeoDataFrame is in
-the shepe and format we want, we can easily export it to a [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON) file -- a data format that most interactive, JavaScript-based visualization
+the shape and format we want, we can easily export it to a [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON) file -- a data format that most interactive, JavaScript-based visualization
 libraries (like the 3 above) require for making maps.
 
 Using GeoPandas (for pre-processing) and one of the 3 visualization libraries (for making maps)
@@ -58,6 +58,41 @@ is a powerful combination that provides a nice introduction into the field of
 [GIS](https://en.wikipedia.org/wiki/Geographic_information_system), without having
 to invest a lot of time in using full-blown solutions like [QGIS](https://en.wikipedia.org/wiki/QGIS)
 or any of the proprietary [ESRI](https://en.wikipedia.org/wiki/Esri) products.
+
+### Getting Started
+
+Clone this repository:
+
+```bash
+git clone https://github.com/pawlodkowski/interactive_climate_map.git
+```
+
+Pick one (or more) of the libraries you'd like to try out, and then navigate
+into its respective sub-directory:
+
+1. [folium/](folium/)
+2. [plotly/](plotly/)
+3. [bokeh/](bokeh/)
+
+*Note that the the content for Plotly/Dash is also included in [plotly/](plotly/) directory.
+However, the tutorial for it is not yet written; though I've included some helpful resources
+on how to get started*.
+
+Once you've navigated to the appropriate directory, open up the corresponding Jupyter Notebook
+(``.ipynb``) file. Follow the step-by-step tutorial with the notebook, which includes:
+- Installation Instructions
+- Data Wrangling with GeoPandas (Steps 1-4)
+  - **This is done as an in-class exercise**. Also, these steps are identical
+  for each of the tutorials.
+- Making the Interactive Choropleth Map (Steps 5-end)
+  - **This is done as a self-guided activity** after the lesson (though
+    a teacher will of course be available in the classroom for debugging support!)
+
+---
+
+
+
+
 
 
 
