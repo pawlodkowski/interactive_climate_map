@@ -16,22 +16,36 @@ the library of your choice:
 3. **Bokeh**
 
 Of course, you can try all 3 of them. The goal of these tutorials is not so
-much to learn the syntax of these -- *quite complex* -- libraries (that is why
+much to learn the syntax of these -- _quite complex_ -- libraries (that is why
 a lot of boilerplate code is mostly already set up for you), but rather to learn
 some concepts behind interactive, browser-based visualization libraries in Python
-(as opposed to "static" libraries like matplotlib or seaborn) and to get a *taste*
+(as opposed to "static" libraries like matplotlib or seaborn) and to get a _taste_
 of what is possible with these libraries. Plus, knowing more advanced data visualization
 tools generally makes you a better Data Scientist.
 
 Here is a quick, high-level overview of the 3 libraries found in this repo
 that you can use for plotting nice interactive choropleth maps:
 
-| Library | Difficulty | Has Web Server / Back-End? | Front-End Framework | Features / Comments |
-| - | :--: | :--: | :--: | :--: |
-| [Folium][1] | Easy | No | Leaflet.js | Easy-to-use. Maps only. |
-| [Plotly][2] | Medium | No | Plotly.js | Comprehensive vizualization library; includes many types of graphs and charts |
-| [Plotly/Dash][3] | Hard | Yes (Flask) | React.js | Powerful framework for building entire web applications (back- and front-end). Built on top of Plotly. |
-| [Bokeh][4] | Hard | Yes (Tornado) | BokehJS | Powerful interactive visualization library (also back- and front-end). Older / more established. |
+| Library          | Difficulty | Has Web Server / Back-End? | Front-End Framework |                                          Features / Comments                                           |
+| ---------------- | :--------: | :------------------------: | :-----------------: | :----------------------------------------------------------------------------------------------------: |
+| [Folium][1]      |    Easy    |             No             |     Leaflet.js      |                                        Easy-to-use. Maps only.                                         |
+| [Plotly][2]      |   Medium   |             No             |      Plotly.js      |             Comprehensive vizualization library; includes many types of graphs and charts              |
+| [Plotly/Dash][3] |    Hard    |        Yes (Flask)         |      React.js       | Powerful framework for building entire web applications (back- and front-end). Built on top of Plotly. |
+| [Bokeh][4]       |    Hard    |       Yes (Tornado)        |       BokehJS       |    Powerful interactive visualization library (also back- and front-end). Older / more established.    |
+
+### Final Results
+
+##### Folium
+
+...
+
+##### Plotly
+
+...
+
+##### Bokeh
+
+![bokeh_demo.gif](img/bokeh_demo.gif)
 
 ### And what about [GeoPandas][5]?
 
@@ -40,12 +54,12 @@ it can be used to plot simple, static maps); rather, it's a powerful library use
 with geospatial data in Python.
 
 Each of the 3 tutorials begin with the exact same steps:
-using GeoPandas to read in a *shapefile* and convert it to a so-called "[GeoDataFrame](https://geopandas.org/reference/geopandas.GeoDataFrame.html)" (the library is built on top of Pandas)
+using GeoPandas to read in a _shapefile_ and convert it to a so-called "[GeoDataFrame](https://geopandas.org/reference/geopandas.GeoDataFrame.html)" (the library is built on top of Pandas)
 so that we can perform all the convenient data wrangling operations we're already used to, such
 as filtering, grouping, and merging.
 
 The fundamental difference between a regular Pandas
-*DataFrame* and a specialized *GeoDataFrame*, however, is that the the latter understands
+_DataFrame_ and a specialized _GeoDataFrame_, however, is that the the latter understands
 geometric data types such as Points, Lines, and Polygons, and can easily perform geometric /
 spatial operations on them.
 
@@ -74,34 +88,25 @@ into its respective sub-directory:
 2. [plotly/](plotly/)
 3. [bokeh/](bokeh/)
 
-*Note that the the content for Plotly/Dash is also included in [plotly/](plotly/) directory.
+_Note that the the content for Plotly/Dash is also included in [plotly/](plotly/) directory.
 However, the tutorial for it is not yet written; though I've included some helpful resources
-on how to get started*.
+on how to get started_.
 
 Once you've navigated to the appropriate directory, open up the corresponding Jupyter Notebook
-(``.ipynb``) file. Follow the step-by-step tutorial with the notebook, which includes:
+(`.ipynb`) file. Follow the step-by-step tutorial with the notebook, which includes:
+
 - Installation Instructions
 - Data Wrangling with GeoPandas (Steps 1-4)
   - **This is done as an in-class exercise**. Also, these steps are identical
-  for each of the tutorials.
+    for each of the tutorials.
 - Making the Interactive Choropleth Map (Steps 5-end)
   - **This is done as a self-guided activity** after the lesson (though
     a teacher will of course be available in the classroom for debugging support!)
 
 ---
 
-
-
-
-
-
-
 [1]: https://python-visualization.github.io/folium/
-
 [2]: https://plotly.com/python/
-
 [3]: https://plotly.com/dash/
-
 [4]: https://bokeh.org/
-
 [5]: https://geopandas.org/
