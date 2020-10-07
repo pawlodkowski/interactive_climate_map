@@ -37,11 +37,11 @@ that you can use for plotting nice interactive choropleth maps:
 
 ##### Folium
 
-...
+![folium_demo.gif](img/folium_demo.gif)
 
 ##### Plotly
 
-...
+![plotly_demo.gif](img/plotly_demo.gif)
 
 ##### Bokeh
 
