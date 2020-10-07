@@ -134,3 +134,5 @@ dmypy.json
 
 #solutions
 *soln.ipynb
+
+.DS_Store
