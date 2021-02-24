@@ -103,6 +103,22 @@ Once you've navigated to the appropriate directory, open up the corresponding Ju
   - **This is done as a self-guided activity** after the lesson (though
     a teacher will of course be available in the classroom for debugging support!)
 
+### Data
+
+The data for this particular lesson is **synthetic** / **fake!** It was originally scraped from [Berkeley Earth](http://berkeleyearth.lbl.gov/country-list/), but then regenerated based a simple polynomial trend and monthly seasonality modeled from the original data source & injected with random noise. Hence, the data in this repo is somewhat realistic but not authentic.
+
+- This was done in the interest of protecting the original data source / preventing its redistribution.
+
+### Credits
+
+Most of the code here was either written or adapted (from outside sources, e.g. library documentation, published tutorials) by **Paul Wlodkowski**, Data Science Instructor @ Spiced Academy in Berlin. 
+
+Some parts of the tutorials were based off code snippets made by fellow colleagues at Spiced Academy. More detailed credits can be found in the respective Jupyter Notebooks.
+
+### License
+
+Work in this repository is published under the conditions of the MIT license. 
+
 ---
 
 [1]: https://python-visualization.github.io/folium/
