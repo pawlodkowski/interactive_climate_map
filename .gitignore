@@ -135,4 +135,8 @@ dmypy.json
 #solutions
 *soln.ipynb
 
+#MacOS
 .DS_Store
+
+#data synthesizer
+*data_faker.ipynb
