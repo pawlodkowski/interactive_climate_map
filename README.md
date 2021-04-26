@@ -75,11 +75,45 @@ or any of the proprietary [ESRI](https://en.wikipedia.org/wiki/Esri) products.
 
 ### Getting Started
 
-Clone this repository:
+Clone this repository and navigate inside:
 
 ```bash
 git clone https://github.com/pawlodkowski/interactive_climate_map.git
+
+cd interactive_climate_map/
 ```
+
+#### Option A: Running in Docker (Recommended)
+
+If you have Docker, you can execute all the code and follow the tutorial using a custom Docker container that is running Jupyter Lab and has all dependencies installed. This will spare you from having to install any libraries on your machine / avoid any potential installation issues (e.g. *geopandas*).
+
+*NOTE: The custom Docker Image is still being tweaked, and has only been tested so far on the Plotly tutorial!*
+
+To try it out, first build the image:
+
+```bash
+docker build -t geo_notebook .
+```
+
+Then run the container:
+
+```bash
+docker run -it --rm -p 8888:8888 -v "$PWD":/home/jovyan/work geo_notebook
+```
+
+Find the appropriate URL from the command-line instructions (e.g. `http://127.0.0.1:8888/lab?token=xxxxx`) and open it in your web-browser. 
+
+#### Option B: Running locally
+
+If you'd prefer to run the tutorials locally without Docker, simply launch Jupyter Notebook (or Lab) at the root of the repository, e.g.:
+
+```bash
+jupyter lab
+```
+
+Keep in mind, however, that you will need to install the python libraries (e.g. *geopandas*, *plotly*) yourself. You will find installation instructions as you follow the tutorials.
+
+### Browse the different tutorials
 
 Pick one (or more) of the libraries you'd like to try out, and then navigate
 into its respective sub-directory:
@@ -96,6 +130,7 @@ Once you've navigated to the appropriate directory, open up the corresponding Ju
 (`.ipynb`) file. Follow the step-by-step tutorial with the notebook, which includes:
 
 - Installation Instructions
+  - You can ignore this if you are already running through Docker.
 - Data Wrangling with GeoPandas (Steps 1-4)
   - **This is done as an in-class exercise**. Also, these steps are identical
     for each of the tutorials.
